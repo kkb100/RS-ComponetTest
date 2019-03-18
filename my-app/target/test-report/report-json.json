@@ -1,0 +1,174 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4904128467,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RS_Hooks.testSetUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Customer searching for phone",
+        "description": "",
+        "id": "this-is-a-product-filter-functionality;customer-searching-for-phone",
+        "after": [
+          {
+            "result": {
+              "duration": 959870738,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RS_Hooks.testCleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4543971607,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the home page",
+            "match": {
+              "location": "CheckOutStepsDef.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2591768068,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I search for product batteries",
+            "match": {
+              "location": "ProductSearchFilterStepsDef.iSearchForABatteryProduct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1494512856,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I validate product is displayed low to high",
+            "match": {
+              "location": "ProductSearchFilterStepsDef.theProductIsSortedLowToHigh()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression1"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3432123976,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RS_Hooks.testSetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Customer searching for phone",
+        "description": "",
+        "id": "this-is-a-product-filter-functionality;customer-searching-for-phone",
+        "after": [
+          {
+            "result": {
+              "duration": 928851657,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RS_Hooks.testCleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3614334031,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the home page",
+            "match": {
+              "location": "CheckOutStepsDef.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2683191602,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I search for product batteries",
+            "match": {
+              "location": "ProductSearchFilterStepsDef.iSearchForABatteryProduct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 909211772,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I validate product is displayed high to low",
+            "match": {
+              "location": "ProductSearchFilterStepsDef.theProductIsSortedHighToLow()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression1"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This is a product filter functionality",
+    "description": "  As a customer\n  I want to filter my search result\n  So that the relevant product is displayed",
+    "id": "this-is-a-product-filter-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ProductSearchFilter.feature",
+    "tags": [
+      {
+        "name": "@Regression1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

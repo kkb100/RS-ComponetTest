@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="26.073746">
+<testcase classname="This is a product filter functionality" name="Customer searching for phone" time="14.505342">
+<system-out><![CDATA[Given I am on the home page.................................................passed
+When I search for product batteries.........................................passed
+Then I validate product is displayed low to high............................passed
+]]></system-out>
+</testcase>
+<testcase classname="This is a product filter functionality" name="Customer searching for phone 2" time="11.568404">
+<system-out><![CDATA[Given I am on the home page.................................................passed
+When I search for product batteries.........................................passed
+Then I validate product is displayed high to low............................passed
+]]></system-out>
+</testcase>
+</testsuite>
