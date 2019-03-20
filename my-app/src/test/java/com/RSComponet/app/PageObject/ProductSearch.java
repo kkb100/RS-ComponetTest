@@ -37,15 +37,16 @@ public class ProductSearch {
     }
 
     public ProductSearch AddProductToBasket(){
-        driver.findElement(By.xpath("(//DIV[text()='Add'])[1]")).click();
+        driver.findElement(By.cssSelector("button[data-qa='add-to-basket-btn']")).click();
         return this;
     }
 
     public void GoToBasketPage() {
+        String cssLocator = "div[class='shBasket js-basket']>a[href*='basketsummary']";
         WebDriverWait wait = new WebDriverWait(driver,120);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//I[@class='icon-cart']")));
-        if(driver.findElement(By.xpath("//I[@class='icon-cart']")).isDisplayed())
-            driver.findElement(By.xpath("//I[@class='icon-cart']")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssLocator)));
+        if(driver.findElement(By.cssSelector(cssLocator)).isDisplayed())
+            driver.findElement(By.cssSelector(cssLocator)).click();
     }
 
     public ProductSearch sortByLowToHigh(){

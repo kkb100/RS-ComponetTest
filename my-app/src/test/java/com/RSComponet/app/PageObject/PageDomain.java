@@ -1,5 +1,4 @@
 package com.RSComponet.app.PageObject;
-
 import org.openqa.selenium.WebDriver;
 
 public class PageDomain {
